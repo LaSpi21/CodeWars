@@ -1,0 +1,6 @@
+def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
+    numbers = []
+    for i in range(a, b + 1):
+        if i == sum([int(n[0])**n[1] for n in zip(str(i), range(1,len(str(i))+1))]):
+            numbers.append(i)
+    return numbers
