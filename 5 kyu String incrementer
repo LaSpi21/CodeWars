@@ -1,0 +1,7 @@
+def increment_string(strng):
+    n = len(strng)-1
+    while n >= 0 and strng[n].isdigit():
+        n -= 1
+    if n == len(strng)-1:
+        return strng + "1"
+    return strng[:n+1] + str(int(strng[n+1:]) + 1).zfill(len(strng[n+1:]))
