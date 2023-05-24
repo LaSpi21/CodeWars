@@ -1,0 +1,4 @@
+def spin_words(sentence):
+    words = sentence.split(" ")
+    new_sentence_words = [i if len(i) < 5 else i[::-1] for i in words]
+    return " ".join(new_sentence_words)
